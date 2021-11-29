@@ -1,0 +1,46 @@
+﻿<Window x:Class="Proyecto_Final_Repuesto.UI.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI"
+        mc:Ignorable="d"
+        Title="Login" Height="231" Width="310" Icon="/repuesto.jpg">
+    <Grid>
+
+
+        <StackPanel>
+            <Label Content="Nombre de usuario:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,0,0" Height="30"/>
+            <TextBox x:Name="NombreUsuarioTextBox" FontSize="15" Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,0,0,0" Text=""/>
+
+            <Label Content="Contraseña:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,0,0" Height="30"/>
+            <PasswordBox x:Name="ClavePasswordBox" FontSize="15" Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,0,0,0"/>
+            <TextBox x:Name="ClaveTextBox" Height="25" FontSize="15" Width="200" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,-25,0,0" TextChanged="ClaveTextBox_TextChanged"/>
+
+            <Button x:Name="VisualizarClaveButton" Width="30" Height="25" Margin="250,-25,0,0" HorizontalAlignment="Left" Click="VisualizarClaveButton_Click">
+                <Image Source="/Imagenes/reveal_icon.png" Margin="0,0,0,0" Height="20" HorizontalAlignment="Center"/>
+            </Button>
+
+            <Button x:Name="OcultarClaveButton" Width="30" Height="25" Margin="250,-25,0,0" HorizontalAlignment="Left" Click="OcultarClaveButton_Click" Visibility="Hidden">
+                <Image Source="/Imagenes/hide_icon.png" Margin="0,0,0,0" Height="20" HorizontalAlignment="Center"/>
+            </Button>
+
+            <Button x:Name="IngresarButton" Height='30' Width="70" Margin="-150,20,0,0" Click="IngresarButton_Click">
+                <DockPanel>
+                    <TextBlock>Ingresar</TextBlock>
+                    <Image Source="/Imagenes/login_icon.png" Height="20" Margin="5,0,0,0"/>
+                </DockPanel>
+            </Button>
+
+            <Button x:Name="CancelarButton" Height='30' Width="70" Margin="50,-30,0,0" Click="CancelarButton_Click">
+                <DockPanel>
+                    <TextBlock>Cancelar</TextBlock>
+                    <Image Source="/Imagenes/logout_icon.png" Height="20" Margin="5,0,0,0"/>
+                </DockPanel>
+            </Button>
+
+        </StackPanel>
+       
+ 
+    </Grid>
+</Window>

@@ -1,0 +1,107 @@
+﻿<Window x:Class="Proyecto_Final_Repuesto.UI.Registros.rCobros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Registros"
+        mc:Ignorable="d"
+        Title="Registro de Cobros" Height="632" Width="679">
+    <Window.Resources>
+        <Style x:Key="CeldaMonetaria" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+        <Style x:Key="CeldaNormal" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <Label Content="Cobro ID: " FontSize="15" HorizontalAlignment="Left" Margin="14,10,0,0"/>
+                <TextBox x:Name="CobroIdTextBox" Text="{Binding CobroId}" HorizontalAlignment="Left" Width="65" Height="30" Margin="20,0,0,0"/>
+
+                <Button x:Name="BuscarButton" Width="70" Height="30" HorizontalAlignment="Left" Margin="110,-30,0,0" Click="BuscarButton_Click" Background="#999999" >
+                    <DockPanel>
+                        <TextBlock FontWeight="Bold">Buscar</TextBlock>
+                        <Image Source="/Imagenes/search_icon.png" Margin="5,0,0,0" Height="20"/>
+                    </DockPanel>
+                </Button>
+
+                <Label Content="Fecha:" FontSize="15" HorizontalAlignment="Left" Margin="14,10,0,0"/>
+                <DatePicker x:Name="FechaDatePicker" Text="{Binding Fecha}" HorizontalAlignment="Left" Margin="20,0,0,0" Height="30" Width="170"/>
+
+                <Label Content="Cliente: " FontSize="15" HorizontalAlignment="Left" Margin="14,0,0,0"/>
+                <ComboBox x:Name="ClienteCombobox" HorizontalAlignment="Left" Width="170" Height="30" Margin="20,0,0,0" IsTextSearchEnabled="False" SelectionChanged="ClienteCombobox_SelectionChanged"/>
+
+            </StackPanel>
+
+            <StackPanel Width="660" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <!--Marco del detalle-->
+                <GroupBox Header=" Detalle Cobros" FontSize="15" BorderBrush="Black" Height="330">
+                    <StackPanel>
+
+                        <Label Content="Venta:" FontSize="15" Height="30" Width="87" HorizontalAlignment="Left" Margin="0, 0, 0, 0"/>
+                        <ComboBox x:Name="VentaIdCombobox" IsTextSearchEnabled="True" Height="30" Width="170" HorizontalAlignment="Left" Margin="7, 0, 0, 0" SelectionChanged="VentaIdCombobox_SelectionChanged"/>
+
+                        <Label Content="Pendiente a pagar:" FontSize="15" HorizontalAlignment="Left" Margin="200,-55,0,0"/>
+                        <TextBox x:Name="PendienteTextbox" IsReadOnly="True" HorizontalAlignment="Left" Width="150" Height="30" Margin="207,-30,0,0"/>
+
+                        <Label Content="Monto:" FontSize="15" HorizontalAlignment="Left" Margin="390,-55,0,0"/>
+                        <TextBox x:Name="MontoTextbox" HorizontalAlignment="Left" Width="150" Height="30" Margin="397,-30,0,0"/>
+
+                        <!--Agregar tarea al detalle-->
+                        <Button x:Name="AgregarButton" FontSize="12" Width="70" Height="30" HorizontalAlignment="Left" Margin="570,-35,0,0" Click="AgregarButton_Click" Background="#1F62FF">
+                            <DockPanel>
+                                <TextBlock FontWeight="Bold">Agregar</TextBlock>
+                                <Image Source="/Imagenes/add_icon.png" Height="15" HorizontalAlignment="Right" Margin="3,0,0,0"/>
+                            </DockPanel>
+                        </Button>
+
+                        <DataGrid x:Name="DetalleDataGrid" IsReadOnly="True" AutoGenerateColumns="False" Height="200" Width="630" Margin="-0,5,0,0" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Venta ID" Binding="{Binding VentaId}" Width="*"/>
+                                <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}" Width="*"/>
+                                <DataGridTextColumn Header="Total" Binding="{Binding Monto}" Width="*" ElementStyle="{StaticResource CeldaMonetaria}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <!--Remover tarea en el detalle-->
+                        <Button x:Name="RemoverButton" FontSize="12" Width="200" Height="30" HorizontalAlignment="Center" Margin="-0,5,0,0" Click="RemoverButton_Click" Background="#F72C25">
+                            <DockPanel>
+                                <TextBlock FontWeight="Bold" HorizontalAlignment="Left" Margin="0,2,0,0">Remover cobro seleccionado</TextBlock>
+                                <Image Source="/Imagenes/remove_icon.png" Height="20" HorizontalAlignment="Right" Margin="3,0,0,0"/>
+                            </DockPanel>
+                        </Button>
+                    </StackPanel>
+                </GroupBox>
+                <!--Marco del detalle-->
+            </StackPanel>
+
+            <Label Content="Total: " FontSize="15" HorizontalAlignment="Left" Margin="480,15,0,0"/>
+            <TextBox x:Name="TotalTextbox" Text="{Binding Total}" HorizontalAlignment="Left" Width="140" Height="30" Margin="525,-30,0,0" IsReadOnly="True"/>
+
+            <!--Botones -->
+            <Button x:Name="NuevoButton" Height="30" Width="70" Margin="20,-30,0,0" HorizontalAlignment="Left" Click="NuevoButton_Click" Background="#1F62FF">
+                <DockPanel>
+                    <TextBlock FontWeight="Bold">Nuevo</TextBlock>
+                    <Image Source="/Imagenes/new_icon.png" Margin="5,0,0,0" Height="20"/>
+                </DockPanel>
+            </Button>
+
+            <Button x:Name="GuardarButton" Height="30" Width="70" Margin="100,-30,0,0" HorizontalAlignment="Left" Click="GuardarButton_Click" Background="#999999" >
+                <DockPanel>
+                    <TextBlock FontWeight="Bold">Guardar</TextBlock>
+                    <Image Source="/Imagenes/save_icon.png" Margin="5,0,0,0" Height="20"/>
+                </DockPanel>
+            </Button>
+
+            <Button x:Name="EliminarButton" Height="30" Width="70" Margin="180,-30,0,0" HorizontalAlignment="Left" Click="EliminarButton_Click" Background="#F72C25">
+                <DockPanel>
+                    <TextBlock FontWeight="Bold">Eliminar</TextBlock>
+                    <Image Source="/Imagenes/delete_icon.png" Margin="5,0,0,0" Height="20" />
+                </DockPanel>
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,48 @@
+﻿<Window x:Class="Proyecto_Final_Repuesto.UI.Consultas.cUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Consultas"
+        mc:Ignorable="d"
+        Title="Consultas de Usuarios" Height="452" Width="789">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+
+            <Label Content="Desde:" FontSize="15" Margin="15,0,0,0"/>
+            <DatePicker x:Name="DesdeDataPicker" SelectedDateFormat="Short" Width="150" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+
+            <Label Content="Hasta:" FontSize="15" Margin="190,-55,0,0"/>
+            <DatePicker x:Name="HastaDataPicker" SelectedDateFormat="Short"  Margin="-210,-25,0,0" Width="177" />
+
+            <Label Content="Filtro:" FontSize="15" HorizontalAlignment="Left" Margin="400,-55,0,0" />
+            <ComboBox x:Name="FiltroComboBox" HorizontalAlignment="Left" Width="120" Height="25" Margin="405,-25,0,0">
+                <ComboBoxItem Content="ID de la cuenta."/>
+                <ComboBoxItem Content="Nombre de usuario."/>
+            </ComboBox>
+
+            <Label Content="Criterio:" FontSize="15" HorizontalAlignment="Left" Margin="550,-55,0,0" />
+            <TextBox x:Name="CriterioTextBox" Width="120" Height="25" HorizontalAlignment="Left" Margin="560,-25,0,0"/>
+
+
+            <Button x:Name="ConsultarButton" Height="30" Width="75" Margin="685,-30,0,0"  Click="ConsultarButton_Click" Background="#FF958F8F">
+                <DockPanel>
+                    <TextBlock FontWeight="Bold">Buscar</TextBlock>
+                    <Image Source="/Imagenes/search_icon.png" Height="15" HorizontalAlignment="Right" Margin="3,0,0,0"/>
+                </DockPanel>
+            </Button>
+
+            <DataGrid x:Name="DatosDataGrid" ItemsSource="{Binding}" AutoGenerateColumns="False" Height="350" Width="750" Margin="0,10,0,0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID Usuario" Binding="{Binding UsuarioId}" Width="65"/>
+                    <DataGridTextColumn Header="Nombre" Binding="{Binding Nombres}" Width="*"/>
+                    <DataGridTextColumn Header="Apellido" Binding="{Binding Apellidos}" Width="*"/>
+                    <DataGridTextColumn Header="Nombre de usuario" Binding="{Binding NombreUsuario}" Width="*"/>
+                    <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}" Width="*"/>
+                    <DataGridTextColumn Header="Registrado por usuario " Binding="{Binding UsuarioModificador}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </StackPanel>
+    </Grid>
+</Window>

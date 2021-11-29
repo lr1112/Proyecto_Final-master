@@ -1,0 +1,51 @@
+﻿<Window x:Class="Proyecto_Final_Repuesto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Final_Repuesto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="/repuesto.jpg"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    
+    
+    <Grid>
+            
+        <StackPanel>
+            
+            <Menu>
+                <MenuItem Header="Registro">
+                    <MenuItem x:Name="rUsuariosMenuItem" Header="Registro de Usuarios" Click="rUsuariosMenuItem_Click"/>
+                    <MenuItem x:Name="rClientesMenuItem" Header="Registro de Clientes" Click="rClientesMenuItem_Click"/>
+                    <MenuItem x:Name="rTiposProductosMenuItem" Header="Registro de Tipos de Productos" Click="rTiposProductosMenuItem_Click"/>
+                    <MenuItem x:Name="rProductosMenuItem" Header="Registro de Productos" Click="rProductosMenuItem_Click"/>
+                    <MenuItem x:Name="rVentasMenuItem" Header="Registro de Ventas" Click="rVentasMenuItem_Click"/>
+                    <MenuItem x:Name="rCobrosMenuItem" Header="Registro de Cobros" Click="rCobrosMenuItem_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="Consulta">
+                    <MenuItem x:Name="cUsuariosMenuItem" Header="Consulta de Usuarios" Click="cUsuariosMenuItem_Click"/>
+                    <MenuItem x:Name="cClientesMenuItem" Header="Consulta de Clientes" Click="cClientesMenuItem_Click"/>
+                    <MenuItem x:Name="cTiposProductosMenuItem" Header="Consulta de Tipos de Productos" Click="cTiposProductosMenuItem_Click"/>
+                    <MenuItem x:Name="cProductosMenuItem" Header="Consulta de Productos" Click="cProductosMenuItem_Click"/>
+                    <MenuItem x:Name="cVentasMenuItem" Header="Consulta de Ventas" Click="cVentasMenuItem_Click"/>
+                    <MenuItem x:Name="cCobrosMenuItem" Header="Consulta de Cobros" Click="cCobrosMenuItem_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="Ayuda">
+                    <MenuItem x:Name="Info" Header="Información" Click="Info_Click" />
+                </MenuItem>
+                <MenuItem Header="Cerrar sesión" Click="MenuItem_Click"/>
+            </Menu>
+            <Image Source="/repuesto.jpg" Width="700" Height="400" />
+        </StackPanel>
+
+    </Grid>
+</Window>

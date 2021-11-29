@@ -1,0 +1,66 @@
+﻿<Window x:Class="Proyecto_Final_Repuesto.UI.Consultas.cProductos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Consultas"
+        mc:Ignorable="d"
+        Title="Consulta de Productos" Height="475" Width="970">
+
+    <Window.Resources>
+        <Style x:Key="CeldaMonetaria" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+        <Style x:Key="CeldaNormal" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+
+            <Label Content="Valor mínimo:" FontSize="15" Margin="15,0,0,0"/>
+            <TextBox x:Name="ValorMinTextbox" Width="150" Height="25"  HorizontalAlignment="Left" Margin="20,0,0,0"/>
+
+            <Label Content="Valor máximo:" FontSize="15" Margin="190,-55,0,0"/>
+            <TextBox x:Name="ValorMaxTextbox"  Margin="-385,-25,0,0" Width="150" />
+
+            <Label Content="Valor:" FontSize="15" HorizontalAlignment="Left" Margin="370,-55,0,0" />
+            <ComboBox x:Name="ValorComboBox" HorizontalAlignment="Left" Width="120" Height="25" Margin="375,-25,0,0">
+                <ComboBoxItem Content="Precio"/>
+                <ComboBoxItem Content="Cantidad"/>
+            </ComboBox>
+
+            <Label Content="Filtro:" FontSize="15" HorizontalAlignment="Left" Margin="520,-55,0,0" />
+            <ComboBox x:Name="FiltroComboBox" HorizontalAlignment="Left" Width="120" Height="25" Margin="525,-25,0,0">
+                <ComboBoxItem Content="ID del Producto"/>
+                <ComboBoxItem Content="Descripcion"/>
+
+            </ComboBox>
+
+            <Label Content="Criterio:" FontSize="15" HorizontalAlignment="Left" Margin="660,-55,0,0" />
+            <TextBox x:Name="CriterioTextBox" Width="120" Height="25" HorizontalAlignment="Left" Margin="665,-25,0,0"/>
+
+
+            <Button x:Name="ConsultarButton" Height="30" Width="75" Margin="785,-30,0,0" Click="ConsultarButton_Click" Background="#FF958F8F">
+                <DockPanel>
+                    <TextBlock FontWeight="Bold">Buscar</TextBlock>
+                    <Image Source="/Imagenes/search_icon.png" Height="15" HorizontalAlignment="Right" Margin="3,0,0,0"/>
+                </DockPanel>
+            </Button>
+
+            <DataGrid x:Name="DatosDataGrid" ItemsSource="{Binding}" AutoGenerateColumns="False" Height="350" Width="890" Margin="0,10,0,0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID Producto" Binding="{Binding ProductoId}" Width="Auto"/>
+                    <DataGridTextColumn Header="Codigo" Binding="{Binding Codigo}" Width="Auto"/>
+                    <DataGridTextColumn Header="Descripcion" Binding="{Binding Descripcion}" Width="Auto"/>
+                    <DataGridTextColumn Header="Precio" Binding="{Binding PrecioUnit}" Width="90" ElementStyle="{StaticResource CeldaMonetaria}"/>
+                    <DataGridTextColumn Header="Tipo de Producto" Binding="{Binding Tipo}" Width="Auto"/>
+                    <DataGridTextColumn Header="% de Descuento" Binding="{Binding Descuento}" Width="100"/>
+                    <DataGridTextColumn Header="Existencias" Binding="{Binding Existencia}" Width="100"/>
+                    <DataGridTextColumn Header="Registrado por usuario " Binding="{Binding UsuarioModificador}" Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>
