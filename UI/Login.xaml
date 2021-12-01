@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI"
         mc:Ignorable="d"
-        Title="Login" Height="231" Width="310" Icon="/repuesto.jpg">
+        Title="Login" Height="270" Width="350" Icon="/repuesto.jpg">
     <Grid>
 
 
@@ -25,17 +25,19 @@
                 <Image Source="/Imagenes/hide_icon.png" Margin="0,0,0,0" Height="20" HorizontalAlignment="Center"/>
             </Button>
 
-            <Button x:Name="IngresarButton" Height='30' Width="105" Margin="-200,20,0,0" Click="IngresarButton_Click">
+            <Button x:Name="IngresarButton" Height='38' Width="117" Margin="-200,20,0,0" Click="IngresarButton_Click" Foreground="{DynamicResource MaterialDesignDarkSeparatorBackground}">
+                
                 <DockPanel>
-                    <TextBlock>Ingresar</TextBlock>
-                    <Image Source="/Imagenes/login_icon.png" Height="20" Margin="5,0,0,0"/>
+                    <TextBlock Foreground="#FFEDE3EE" Height="22">Ingresar</TextBlock>
+                    <Image Source="/Imagenes/login_icon.png"></Image>
                 </DockPanel>
             </Button>
 
-            <Button x:Name="CancelarButton" Height='30' Width="104" Margin="50,-30,0,0" Click="CancelarButton_Click">
+            <Button x:Name="CancelarButton" Height='38' Width="121" Margin="50,-40,0,0" Click="CancelarButton_Click">
+                
                 <DockPanel>
-                    <TextBlock>Cancelar</TextBlock>
-                    <Image Source="/Imagenes/logout_icon.png" Height="20" Margin="5,0,0,0"/>
+                    <TextBlock Foreground="#FFF8E5F9" Height="18">Cancelar</TextBlock>
+                    <Image Source="/Imagenes/logout_icon.png" Height="28" Margin="5,0,0,0" Width="31"/>
                 </DockPanel>
             </Button>
 
