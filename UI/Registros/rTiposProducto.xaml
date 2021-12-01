@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Tipos de Productos" Height="250" Width="350">
+        Title="Registro de Tipos de Productos" Height="250" Width="350" Icon="/repuesto.jpg">
     <Grid>
         <StackPanel>
             <Label Content="Tipo ID:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,0,0" Height="30"/>

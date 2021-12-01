@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Productos" Height="615" Width="400">
-    
+        Title="Registro de Productos" Height="615" Width="400" Icon="/repuesto.jpg">
+
     <Border Padding="20">
         <StackPanel>
             <Grid>

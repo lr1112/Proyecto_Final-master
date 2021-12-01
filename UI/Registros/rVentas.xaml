@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Registros"
         mc:Ignorable="d"
-        Title="rVentas" Height="800" Width="707">
+        Title="Registro de Ventas" Height="800" Width="707" Icon="/repuesto.jpg">
     
     <Window.Resources>
         <Style x:Key="CeldaMonetaria" TargetType="TextBlock">
@@ -32,7 +32,7 @@
                 <Button x:Name="BuscarButton" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="BuscarButton_Click" Background="#FF958F8F" Grid.Column="1">
                     <DockPanel>
                         <TextBlock FontWeight="Bold">Buscar</TextBlock>
-                        <Image Source="/UI/Registros/search_icon.png" Height="15" HorizontalAlignment="Right" Margin="3,0,0,0"/>
+                        <Image Source="/Imagenes/search_icon.png" Height="15" HorizontalAlignment="Right" Margin="3,0,0,0"/>
                     </DockPanel>
                 </Button>
             </Grid>

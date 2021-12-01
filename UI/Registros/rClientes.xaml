@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Registros"
         mc:Ignorable="d"
-        Title="rClientes" Height="725" Width="350">
+        Title="Registro de Clientes" Height="725" Width="350" Icon="/repuesto.jpg">
 
     <Border Padding="20">
         <StackPanel>

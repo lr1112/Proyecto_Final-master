@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Usuarios" Height="640" Width="395">
+        Title="Registro de Usuarios" Height="640" Width="395" Icon="/repuesto.jpg">
     <Border Padding="20">
         <StackPanel>
 

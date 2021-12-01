@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Consultas"
         mc:Ignorable="d"
-        Title="Consulta de Ventas" Height="550" Width="1078">
+        Title="Consulta de Ventas" Height="550" Width="1078" Icon="/repuesto.jpg">
     <Window.Resources>
         <Style x:Key="CeldaMonetaria" TargetType="TextBlock">
             <Setter Property="HorizontalAlignment" Value="Right"/>

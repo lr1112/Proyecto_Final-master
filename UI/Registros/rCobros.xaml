@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Cobros" Height="632" Width="679">
+        Title="Registro de Cobros" Height="700" Width="680" Icon="/repuesto.jpg">
     <Window.Resources>
         <Style x:Key="CeldaMonetaria" TargetType="TextBlock">
             <Setter Property="HorizontalAlignment" Value="Right"/>
@@ -38,7 +38,7 @@
             <StackPanel Width="660" HorizontalAlignment="Left" Margin="10,0,0,0">
                 <!--Marco del detalle-->
                 <GroupBox Header=" Detalle Cobros" FontSize="15" BorderBrush="Black" Height="330">
-                    <StackPanel>
+                    <StackPanel Margin="0,0,0,-57">
 
                         <Label Content="Venta:" FontSize="15" Height="30" Width="87" HorizontalAlignment="Left" Margin="0, 0, 0, 0"/>
                         <ComboBox x:Name="VentaIdCombobox" IsTextSearchEnabled="True" Height="30" Width="170" HorizontalAlignment="Left" Margin="7, 0, 0, 0" SelectionChanged="VentaIdCombobox_SelectionChanged"/>

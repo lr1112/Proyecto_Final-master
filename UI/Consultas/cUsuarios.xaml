@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto.UI.Consultas"
         mc:Ignorable="d"
-        Title="Consultas de Usuarios" Height="452" Width="789">
+        Title="Consultas de Usuarios" Height="452" Width="789" Icon="/repuesto.jpg">
     <Grid>
         <StackPanel Orientation="Vertical" Margin="10,10,10,10">
 
