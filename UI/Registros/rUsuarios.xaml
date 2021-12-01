@@ -20,11 +20,11 @@
                     <TextBox x:Name="UsuarioIdTextBox" Text="{Binding UsuarioId}" Height="30" Width="70" HorizontalAlignment="Left"/>
                 </StackPanel>
 
-                <Button x:Name="BuscarButton" Width="70" Height="30" Click="BuscarButton_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="#999999" Grid.Column="1">
+                <Button x:Name="BuscarButton" Width="101" Height="30" Click="BuscarButton_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="#999999" Grid.Column="1">
                     <DockPanel>
                         <TextBlock FontWeight="Bold">Buscar</TextBlock>
                         <Image Source="/Imagenes/search_icon.png" Margin="5,0,0,0" Height="20"/>
-                        
+
                     </DockPanel>
                 </Button>
 
@@ -94,7 +94,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" Height="Auto">
-                    <Button x:Name="VisualizarClaveButton" Width="30" Height="25" Margin="0,30" Click="VisualizarClaveButton_Click">
+                    <Button x:Name="VisualizarClaveButton" Width="50" Height="52" Margin="0,30" Click="VisualizarClaveButton_Click">
                         <Image Source="/Imagenes/reveal_icon.png" Margin="0,0,0,0" Height="20" HorizontalAlignment="Center"/>
                     </Button>
 
@@ -120,7 +120,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" Height="Auto">
-                    <Button x:Name="VisualizarVerificarButton" Width="30" Height="25" Margin="0,30,0,0" Click="VisualizarVerificarButton_Click">
+                    <Button x:Name="VisualizarVerificarButton" Width="50" Height="50" Margin="0,30,0,0" Click="VisualizarVerificarButton_Click">
                         <Image Source="/Imagenes/reveal_icon.png" Margin="0,0,0,0" Height="20" HorizontalAlignment="Center"/>
                     </Button>
 
@@ -138,21 +138,21 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="NuevoButton" Width="70" Height="30" Click="NuevoButton_Click" Background="#1F62FF" Grid.Column="0" Margin="0,0,20,0">
+                <Button x:Name="NuevoButton" Height="30" Click="NuevoButton_Click" Background="#1F62FF" Grid.Column="0" Margin="0,0,10,0">
                     <DockPanel>
                         <TextBlock FontWeight="Bold">Nuevo</TextBlock>
                         <Image Source="/Imagenes/new_icon.png" Margin="5,0,0,0" Height="20"/>
                     </DockPanel>
                 </Button>
 
-                <Button x:Name="GuardarButton" Width="70" Height="30" Click="GuardarButton_Click" Background="#999999" Grid.Column="1" >
+                <Button x:Name="GuardarButton" Height="30" Click="GuardarButton_Click" Background="#999999" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,103,0" >
                     <DockPanel>
                         <TextBlock FontWeight="Bold">Guardar</TextBlock>
                         <Image Source="/Imagenes/save_icon.png" Margin="5,0,0,0" Height="20"/>
                     </DockPanel>
                 </Button>
 
-                <Button x:Name="EliminarButton" Width="70" Height="30" Click="EliminarButton_Click" Background="#F72C25" Grid.Column="2" Margin="20,0,0,0">
+                <Button x:Name="EliminarButton" Height="30" Click="EliminarButton_Click" Background="#F72C25" Grid.Column="2" Margin="20,0,-12,0">
                     <DockPanel>
                         <TextBlock FontWeight="Bold">Eliminar</TextBlock>
                         <Image Source="/Imagenes/delete_icon.png" Margin="5,0,0,0" Height="20" />
