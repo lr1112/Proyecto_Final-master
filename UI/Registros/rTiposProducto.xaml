@@ -28,7 +28,7 @@
                 </DockPanel>
             </Button>
 
-            <Button x:Name="GuardarButton" Width="70" Height="30" Margin="117,-30,0,0" HorizontalAlignment="Left" Click="GuardarButton_Click" Background="#999999" >
+            <Button x:Name="GuardarButton" Width="73" Height="31" Margin="117,-30,0,0" HorizontalAlignment="Left" Click="GuardarButton_Click" Background="#999999" >
                 <DockPanel>
                     <TextBlock FontWeight="Bold" Width="27">Guardar</TextBlock>
                     <Image Source="/Imagenes/save_icon.png" Margin="5,0,0,0" Height="20"/>
