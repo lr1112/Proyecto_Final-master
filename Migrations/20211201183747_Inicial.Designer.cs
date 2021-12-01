@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Proyecto_Final_Repuesto.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20211118180819_inicial")]
-    partial class inicial
+    [Migration("20211201183747_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -209,6 +209,19 @@ namespace Proyecto_Final_Repuesto.Migrations
                     b.HasKey("UsuarioId");
 
                     b.ToTable("Usuarios");
+
+                    b.HasData(
+                        new
+                        {
+                            UsuarioId = 1,
+                            Apellidos = "Rosario Tejada",
+                            Clave = "c3bUNm4X/0F61TyjVsok+rUXb9kM8TBZ91iKiVopAs4=",
+                            EsAdmin = 1,
+                            Fecha = new DateTime(2021, 12, 1, 14, 37, 46, 787, DateTimeKind.Local).AddTicks(4815),
+                            NombreUsuario = "Admin01",
+                            Nombres = "Luis Ramon",
+                            UsuarioModificador = 1
+                        });
                 });
 
             modelBuilder.Entity("Entidades.Ventas", b =>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Proyecto_Final_Repuesto.Migrations
 {
-    public partial class inicial : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -160,6 +160,11 @@ namespace Proyecto_Final_Repuesto.Migrations
                         principalColumn: "VentaId",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Usuarios",
+                columns: new[] { "UsuarioId", "Apellidos", "Clave", "EsAdmin", "Fecha", "NombreUsuario", "Nombres", "UsuarioModificador" },
+                values: new object[] { 1, "Rosario Tejada", "c3bUNm4X/0F61TyjVsok+rUXb9kM8TBZ91iKiVopAs4=", 1, new DateTime(2021, 12, 1, 14, 37, 46, 787, DateTimeKind.Local).AddTicks(4815), "Admin01", "Luis Ramon", 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_CobrosDetalle_CobroId",

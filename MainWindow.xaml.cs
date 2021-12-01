@@ -27,17 +27,24 @@ namespace Proyecto_Final_Repuesto
         Usuarios Usuario;
        
 
-        public MainWindow(Usuarios Usuario)
+        public MainWindow(Usuarios usuario)
         {
             InitializeComponent();
-           // Usuario = usuario;
-           
+            Usuario = usuario;
+                      
 
         }
 
         private void rUsuariosMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            new rUsuarios().Show();
+            if (Usuario.EsAdmin == 1)
+            {
+                new rUsuarios(Usuario).Show();
+            }
+            else
+            {
+                MessageBox.Show("Debe de ser un administrador para acceder a la ventana de registro de usuarios.", "Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
         }
 
         private void rClientesMenuItem_Click(object sender, RoutedEventArgs e)
@@ -102,8 +109,8 @@ namespace Proyecto_Final_Repuesto
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-           /// new Login().Show();
-            //this.Close();
+            new Login().Show();
+            this.Close();
         }
     }
 }

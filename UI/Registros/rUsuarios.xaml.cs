@@ -24,13 +24,13 @@ namespace Proyecto_Final_Repuesto.UI.Registros
     {
         Usuarios Usuario;
         Usuarios Modificador;
-        Usuarios usuario;
-        public rUsuarios()
+        
+        public rUsuarios(Usuarios usuario)
         {
             InitializeComponent();
             Usuario = new Usuarios();
             this.DataContext = Usuario;
-            Modificador = Usuario;
+            Modificador = usuario;
         }
         private void Limpiar()
         {
