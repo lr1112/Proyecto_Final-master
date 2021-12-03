@@ -104,7 +104,7 @@ namespace Proyecto_Final_Repuesto
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-
+            new Info().Show();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\EDUCACION\Desktop\Proyecto_Final-master\Proyecto_Final-master\App.xaml
-141927578367
+15777204080
 
-352111865252
+361432840231
 215-1434292317
-MainWindow.xaml;UI\Consultas\cClientes.xaml;UI\Consultas\cCobros.xaml;UI\Consultas\cProductos.xaml;UI\Consultas\cTiposProducto.xaml;UI\Consultas\cUsuarios.xaml;UI\Consultas\cVentas.xaml;UI\Login.xaml;UI\Registros\rClientes.xaml;UI\Registros\rCobros.xaml;UI\Registros\rProductos.xaml;UI\Registros\rTiposProducto.xaml;UI\Registros\rUsuarios.xaml;UI\Registros\rVentas.xaml;
+MainWindow.xaml;UI\Consultas\cClientes.xaml;UI\Consultas\cCobros.xaml;UI\Consultas\cProductos.xaml;UI\Consultas\cTiposProducto.xaml;UI\Consultas\cUsuarios.xaml;UI\Consultas\cVentas.xaml;UI\Info.xaml;UI\Login.xaml;UI\Registros\rClientes.xaml;UI\Registros\rCobros.xaml;UI\Registros\rProductos.xaml;UI\Registros\rTiposProducto.xaml;UI\Registros\rUsuarios.xaml;UI\Registros\rVentas.xaml;
 
 False
 

@@ -263,3 +263,5 @@ C:\Users\EDUCACION\Desktop\Proyecto_Final-master\Proyecto_Final-master\obj\Debug
 C:\Users\EDUCACION\Desktop\Proyecto_Final-master\Proyecto_Final-master\obj\Debug\net5.0-windows\Proyecto_Final_Repuesto.csproj.CopyComplete
 C:\Users\EDUCACION\Desktop\Proyecto_Final-master\Proyecto_Final-master\obj\Debug\net5.0-windows\Proyecto_Final_Repuesto.genruntimeconfig.cache
 C:\Users\EDUCACION\Desktop\Proyecto_Final-master\Proyecto_Final-master\bin\Debug\net5.0-windows\Data\Repuestos.db
+C:\Users\EDUCACION\Desktop\Proyecto_Final-master\Proyecto_Final-master\obj\Debug\net5.0-windows\UI\Info.g.cs
+C:\Users\EDUCACION\Desktop\Proyecto_Final-master\Proyecto_Final-master\obj\Debug\net5.0-windows\UI\Info.baml
