@@ -38,12 +38,12 @@ namespace Entidades
 
         public Usuarios()
         {
-            UsuarioId = 1;
-            NombreUsuario = "Admin01";
+            UsuarioId = 0;
+            NombreUsuario = "";
             Fecha = DateTime.Now;
-            Nombres = "Luis";
-            Apellidos = "Rosario";
-            Clave = "c3bUNm4X/0F61TyjVsok+rUXb9kM8TBZ91iKiVopAs4=";//Clave= Password123
+            Nombres = "";
+            Apellidos = "";
+            Clave = "";
             UsuarioModificador = 0;
         }
 

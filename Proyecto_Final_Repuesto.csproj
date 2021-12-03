@@ -37,9 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data\Repuestos.db">
+  <None Update="Data\Repuestos.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
-</Project>
+	
+	</Project>
