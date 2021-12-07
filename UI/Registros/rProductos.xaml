@@ -93,7 +93,7 @@
 
                 <StackPanel Grid.Column="0">
                     <TextBlock Text="Cantidad de existencias:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"/>
-                    <TextBox x:Name="ExistenciaTextBox" Text="{Binding Existencia}" Height="25" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True" TextChanged="ExistenciaTextBox_TextChanged"/>
+                    <TextBox x:Name="ExistenciaTextBox" Text="{Binding Existencia}" Height="25" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="False" TextChanged="ExistenciaTextBox_TextChanged"/>
                     <TextBlock x:Name="ExistenciaVad" TextWrapping="Wrap" FontSize="12" Foreground="Red"  HorizontalAlignment="Left" Height="51" Width="150" Visibility="Hidden"/>
                 </StackPanel>
 

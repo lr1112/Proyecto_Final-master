@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Final_Repuesto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Icon="/repuesto.jpg"
+        Title="Ventana Principal" Height="450" Width="800" Icon="/repuesto.jpg"
        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
